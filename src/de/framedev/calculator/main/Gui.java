@@ -46,6 +46,9 @@ public class Gui {
         frame.setVisible(true);
     }
 
+    /**
+     * Operations
+     */
     private enum Operator {
         DIVIDE,
         MULTIPLY,
