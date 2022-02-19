@@ -6,13 +6,12 @@ import java.awt.event.ActionListener;
 
 /**
  * / This Plugin was Created by FrameDev
- * / Package : de.framedev.calculator.main
+ * / Package : main.java.main
  * / ClassName Gui
  * / Date: 19.02.22
  * / Project: Calculator
  * / Copyrighted by FrameDev
  */
-
 public class Gui {
     private JTextPane textPane1;
     private JButton a7Button;
@@ -38,6 +37,11 @@ public class Gui {
     private int role = 0;
     private Operator operator;
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         JFrame frame = new JFrame("Gui");
         frame.setContentPane(new Gui().panel);
@@ -50,12 +54,27 @@ public class Gui {
      * Operations
      */
     private enum Operator {
+        /**
+         * Divide operator.
+         */
         DIVIDE,
+        /**
+         * Multiply operator.
+         */
         MULTIPLY,
+        /**
+         * Subtract operator.
+         */
         SUBTRACT,
+        /**
+         * Addition operator.
+         */
         ADDITION;
     }
 
+    /**
+     * Instantiates a new Gui.
+     */
     public Gui() {
         a1Button.addActionListener(new ActionListener() {
             /**
